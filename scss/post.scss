@@ -342,10 +342,12 @@ img.activityicon {
     height: calc(1.5em + 0.75rem + 6px);
 }
 .btn-primary {
-    background-color: #06a1ac; border-color: #06a1ac;
+    background-color: $primarybtn-bg; 
+    border-color: $primarybtn-bg;
 }
 .btn-primary:hover {
-    background-color: #3db2ba; border-color: #3db2ba;
+    background-color: $primarybtn-bg; 
+    border-color: $primarybtn-bg;
 }
 .dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:focus-within, 
 .maincalendar .calendarmonth td.today .day-number-circle {

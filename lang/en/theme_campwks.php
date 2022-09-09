@@ -39,6 +39,8 @@ $string['loginbg'] = 'Login Background Colour';
 $string['loginbg_desc'] = 'The main colour to use for the login background.';
 $string['blockbg'] = 'Block Background Colour';
 $string['blockbg_desc'] = 'The main colour to use for the block background.';
+$string['primarybtnbg'] = 'Primary Button Background Colour';
+$string['primarybtnbg_desc'] = 'The main colour to use for the Primary Button background.';
 $string['companyinfo'] = 'Login page company info';
 $string['companyinfo_desc'] = 'Company info will be shown on Login Page';
 $string['companyinfo_default'] = '<h3 class="mb-5">Support</h3>

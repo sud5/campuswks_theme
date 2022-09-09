@@ -68,6 +68,7 @@ function theme_campwks_get_pre_scss($theme) {
         'headerbg' => ['header-bg'],
         'loginbg' => ['login-bg'],
         'blockbg' => ['block-bg'],
+        'primarybtnbg' => ['primarybtn-bg'],
     ];                                                                                                                                    
     // Prepend variables first.                                                                                                     
     foreach ($configurable as $configkey => $targets) {                                                                             

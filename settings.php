@@ -73,6 +73,13 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    $name = 'theme_campwks/primarybtnbg';
+    $title = get_string('primarybtnbg', 'theme_campwks');
+    $description = get_string('primarybtnbg_desc', 'theme_campwks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#06a1ac');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     // Must add the page after defining all the settings!
     $settings->add($page);
     

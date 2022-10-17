@@ -152,8 +152,8 @@
                 </form>
                 {{#hasidentityproviders}}
                     <div class="login-divider"></div>
-                    <div class="login-identityproviders">
-                        <h2 class="login-heading">{{#str}} potentialidps, auth {{/str}}</h2>
+                    <div class="login-identityproviders mt-4">
+                        <h2 class="login-heading d-none">{{#str}} potentialidps, auth {{/str}}</h2>
                         {{#identityproviders}}
                             <a class="btn login-identityprovider-btn btn-block" href="{{url}}">
                                 {{#iconurl}}
@@ -186,8 +186,8 @@
                         <button class="btn btn-secondary btn-sm" type="submit">{{#str}}loginguest{{/str}}</button>
                     </form>
                 {{/canloginasguest}}
-                <div class="login-divider"></div>
-                <div class="d-flex">
+                <div class="login-divider d-none"></div>
+                <div class="d-none">
                     <button type="button" class="btn btn-secondary btn-sm" {{!
                     }} data-modal="alert"{{!
                     }} data-modal-title-str='["cookiesenabled", "core"]' {{!

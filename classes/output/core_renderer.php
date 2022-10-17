@@ -50,7 +50,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         $context->errorformatted = $this->error_text($context->error);
         $context->companyinfo = theme_campwks_get_setting('companyinfo');
         $context->loginpageimg = get_loginimage_url();
-        $url = get_logo_url();
+        $url = get_loginlogo_url();
         $context->logourl = $url;
         $context->sitename = format_string($SITE->fullname, true,
                 ['context' => context_course::instance(SITEID), "escape" => false]);

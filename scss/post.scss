@@ -61,14 +61,17 @@ h6, .h6 {
 .navbar.fixed-top .usermenu .dropdown .dropdown-toggle {
     padding-left: 0.5rem; padding-right: 0.5rem;
 }
-.custom-switch .custom-control-label::after, .custom-switch .custom-control-input:checked~.custom-control-label::after {
-    background-color: #faefef;
+.editing .custom-switch .custom-control-label::after, .editing .custom-switch .custom-control-input:checked~.custom-control-label::after {
+    background-color: #fff;
 }
-.custom-control-label::before, .custom-control-input:checked~.custom-control-label::before {
+.editing .custom-control-label::before, .editing .custom-control-input:checked~.custom-control-label::before {
     background-color: #000; border: #000 solid 1px;
 }
 .editmode-switch-form .text-primary {
     color: #000 !important;
+}
+.simplesearchform .collapse.show, .simplesearchform .collapsing {
+    height: 72px;
 }
 /***** End Here *****/
 
@@ -205,6 +208,15 @@ img.activityicon {
 #block-region-content .block {
     background-color: #fff;
 }
+.block .block-cards .course-info-container {
+    padding: .5rem .8rem 0 .8rem;
+}
+.dashboard-card-deck .dashboard-card .dashboard-card-footer {
+    padding: 0 .8rem;
+}
+.block .block-cards .card .coursemenubtn {
+    margin-top: -0.75rem;
+}
 /***** End Here *****/
 
 
@@ -224,10 +236,10 @@ img.activityicon {
         min-height: calc(100vh - 1px); display: flex; align-items: center; justify-content: center;
     }
     .loginform {
-        width: 60%;
+        width: 100%; max-width: 400px;
     }
     .form-control {
-        height: calc(1.5em + 0.75rem + 1px); border-radius: 0;
+        height: calc(1.5em + 0.75rem + 2px); border-radius: 0;
     }
     .login-divider {
         margin-top: 0.5rem; margin-bottom: 0.5rem; border-top: 1px solid #dee2e6; 
@@ -249,10 +261,21 @@ img.activityicon {
     display: flex; align-items: center;
     .btn {
         background-color: #f7931e; border-color: #000; border-radius: 0; font-weight: 800; margin-left: auto;
+        &:hover {
+            background-color: #d67708; 
+        }
     }
 }
 .login-form-forgotpassword {
     font-size: 18px; font-weight: 700;
+}
+.login-identityproviders {
+    .btn {
+        background-color: #f7931e; border-color: #000; border-radius: 0; font-weight: 800; margin-left: auto;
+        &:hover {
+            background-color: #d67708; 
+        }
+    }
 }
 .login-right-panel {
     background-color: $login-bg; color: #fff;

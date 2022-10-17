@@ -40,6 +40,13 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_campwks_update_settings_images');
     $page->add($setting);
 
+    $name = 'theme_campwks/loginlogo';
+    $title = get_string('loginlogo', 'theme_campwks');
+    $description = get_string('loginlogodesc', 'theme_campwks');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'loginlogo');
+    $setting->set_updatedcallback('theme_campwks_update_settings_images');
+    $page->add($setting);
+
     $name = 'theme_campwks/loginpageimg';
     $title = get_string('loginpageimg', 'theme_campwks');
     $description = get_string('loginpageimg_desc', 'theme_campwks');

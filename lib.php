@@ -100,7 +100,7 @@ function theme_campwks_get_pre_scss($theme) {
  * @return bool
  */
 function theme_campwks_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = array()) {
-    if ($context->contextlevel == CONTEXT_SYSTEM && ($filearea === 'logo' || $filearea === 'loginpageimg')) {
+    if ($context->contextlevel == CONTEXT_SYSTEM && ($filearea === 'logo' || $filearea === 'loginlogo' || $filearea === 'loginpageimg')) {
         $theme = theme_config::load('campwks');
         // By default, theme files must be cache-able by both browsers and proxies.
         if (!array_key_exists('cacheability', $options)) {
@@ -153,6 +153,25 @@ if (!function_exists('get_logo_url')) {
             $theme = theme_config::load('campwks');
         }
         $logo = $theme->setting_file_url('logo', 'logo');
+        $logo = empty($logo) ? $OUTPUT->image_url('campus_logo', 'theme') : $logo;
+        return $logo;
+    }
+}
+
+// Logo Image URL Fetch from theme settings.
+// @ return string.
+if (!function_exists('get_loginlogo_url')) {
+    /**
+     * Description
+     * @return type|string
+     */
+    function get_loginlogo_url() {
+        global $OUTPUT;
+        static $theme;
+        if (empty($theme)) {
+            $theme = theme_config::load('campwks');
+        }
+        $logo = $theme->setting_file_url('loginlogo', 'loginlogo');
         $logo = empty($logo) ? $OUTPUT->image_url('campus_logo', 'theme') : $logo;
         return $logo;
     }

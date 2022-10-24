@@ -83,7 +83,63 @@ if ($ADMIN->fulltree) {
     $name = 'theme_campwks/primarybtnbg';
     $title = get_string('primarybtnbg', 'theme_campwks');
     $description = get_string('primarybtnbg_desc', 'theme_campwks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#f7931e');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_campwks/primarybtnbghover';
+    $title = get_string('primarybtnbghover', 'theme_campwks');
+    $description = get_string('primarybtnbghover_desc', 'theme_campwks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#d67708');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_campwks/primarybtntextcolor';
+    $title = get_string('primarybtntextcolor', 'theme_campwks');
+    $description = get_string('primarybtntextcolor_desc', 'theme_campwks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#1d2125');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_campwks/primarybtnbordercolor';
+    $title = get_string('primarybtnbordercolor', 'theme_campwks');
+    $description = get_string('primarybtnbordercolor_desc', 'theme_campwks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#000000');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_campwks/linkcolor';
+    $title = get_string('linkcolor', 'theme_campwks');
+    $description = get_string('linkcolor_desc', 'theme_campwks');
     $setting = new admin_setting_configcolourpicker($name, $title, $description, '#06a1ac');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_campwks/linkcolorhover';
+    $title = get_string('linkcolorhover', 'theme_campwks');
+    $description = get_string('linkcolorhover_desc', 'theme_campwks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#000000');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_campwks/dropdownbgcolor';
+    $title = get_string('dropdownbgcolor', 'theme_campwks');
+    $description = get_string('dropdownbgcolor_desc', 'theme_campwks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#06a1ac');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_campwks/headerlinkcolor';
+    $title = get_string('headerlinkcolor', 'theme_campwks');
+    $description = get_string('headerlinkcolor_desc', 'theme_campwks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#000000');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_campwks/headerlinkhovercolor';
+    $title = get_string('headerlinkhovercolor', 'theme_campwks');
+    $description = get_string('headerlinkhovercolor_desc', 'theme_campwks');
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, '#777777');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 

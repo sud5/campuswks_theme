@@ -69,6 +69,14 @@ function theme_campwks_get_pre_scss($theme) {
         'loginbg' => ['login-bg'],
         'blockbg' => ['block-bg'],
         'primarybtnbg' => ['primarybtn-bg'],
+        'primarybtnbghover' => ['primarybtn-bg-hover'],
+        'primarybtntextcolor' => ['primarybtn-text-color'],
+        'primarybtnbordercolor' => ['primarybtn-border-color'],
+        'linkcolor' => ['link-color'],
+        'linkcolorhover' => ['link-hover-color'],
+        'dropdownbgcolor' => ['dropdown-bg-color'],
+        'headerlinkcolor' => ['headerlink-color'],
+        'headerlinkhovercolor' => ['headerlink-hover-color'],
     ];                                                                                                                                    
     // Prepend variables first.                                                                                                     
     foreach ($configurable as $configkey => $targets) {                                                                             

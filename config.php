@@ -170,6 +170,7 @@ $THEME->layouts = [
 $THEME->scss = function($theme) {
     return theme_campwks_get_main_scss_content($theme);
 };
+$THEME->removedprimarynavitems = array('home','courses');
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 $THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
 $THEME->haseditswitch = true;

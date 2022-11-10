@@ -26,7 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 // This is the version of the plugin.
-$plugin->version = 2022051100;
+$plugin->version = 2022051101;
 
 // This is the version of Moodle this plugin requires.
 $plugin->requires = 2022041200;
@@ -37,6 +37,6 @@ $plugin->component = 'theme_campwks';
 
 // This is a list of plugins, this plugin depends on (and their versions).
 $plugin->dependencies = [
-    'theme_classic' => 2022041200
+    'theme_boost' => 2022041900
 ];
 

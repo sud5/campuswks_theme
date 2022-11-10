@@ -170,6 +170,14 @@ img.activityicon {
     .action-menu .menubar {
         align-items: center;
     }
+    .block-cards {
+        .myoverview-progress {
+            border-radius: 0; height: 5px; background-color: #776e6e; margin-top: 0.25rem;
+            .progress-bar {
+                background-color: #f7931e;
+            }
+        }
+    }
 }
 .block_navigation, .block_settings {
     .block_tree {
@@ -216,6 +224,9 @@ img.activityicon {
 }
 .block .block-cards .card .coursemenubtn {
     margin-top: -0.75rem;
+}
+.dashboard-card-deck.one-row {
+    justify-content: left!important;
 }
 /***** End Here *****/
 

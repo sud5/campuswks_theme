@@ -1,7 +1,15 @@
+@media (min-width: 840px) {
+    .dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
+        width: calc(25% - 0.5rem);
+    }
+}
 /* Min width media query */
 @media (min-width: 576px) {
     #page.drawers .main-inner {
         margin-top: 0;
+    }
+    .dashboard-card-deck.fixed-width-cards .dashboard-card, .dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
+        width: calc(25% - 0.5rem);
     }
 }
 @media (min-width: 768px) {

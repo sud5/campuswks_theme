@@ -77,6 +77,8 @@ function theme_campwks_get_pre_scss($theme) {
         'dropdownbgcolor' => ['dropdown-bg-color'],
         'headerlinkcolor' => ['headerlink-color'],
         'headerlinkhovercolor' => ['headerlink-hover-color'],
+        'controlsborederradius' => ['controls-boreder-radius'],
+        'cardborederradius' => ['card-boreder-radius'],
     ];                                                                                                                                    
     // Prepend variables first.                                                                                                     
     foreach ($configurable as $configkey => $targets) {                                                                             

@@ -411,4 +411,10 @@ button.close:focus, .form-autocomplete-selection.focus, .form-autocomplete-selec
 div[data-region="completion-info"] .btn-success {
     background-color: #f7931e; border-color: #da7c0d;
 }
+.form-control {
+    border-radius: $controls-boreder-radius;
+}
+.card {
+    border-radius: $card-boreder-radius;
+}
 /***** End Here *****/

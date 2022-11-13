@@ -143,6 +143,20 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
+    $name = 'theme_campwks/controlsborederradius';
+    $title = get_string('controlsborederradius', 'theme_campwks');
+    $description = get_string('controlsborederradius_desc', 'theme_campwks');
+    $setting = new admin_setting_configtext($name, $title, $description, '5px', PARAM_RAW);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    $name = 'theme_campwks/cardborederradius';
+    $title = get_string('cardborederradius', 'theme_campwks');
+    $description = get_string('cardborederradius_desc', 'theme_campwks');
+    $setting = new admin_setting_configtext($name, $title, $description, '5px', PARAM_RAW);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
     // Must add the page after defining all the settings!
     $settings->add($page);
     

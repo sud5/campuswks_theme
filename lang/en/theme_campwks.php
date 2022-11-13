@@ -59,6 +59,10 @@ $string['headerlinkcolor'] = 'Header Link Color';
 $string['headerlinkcolor_desc'] = 'The main colour to use for the Header Link.';
 $string['headerlinkhovercolor'] = 'Header Link Hover Color';
 $string['headerlinkhovercolor_desc'] = 'The main colour to use for the Header link hover.';
+$string['controlsborederradius'] = 'All controls border radius.';
+$string['controlsborederradius_desc'] = 'The value to use for the all controls border radius.';
+$string['cardborederradius'] = 'All card border radius.';
+$string['cardborederradius_desc'] = 'The value to use for the all card border radius.';
 $string['companyinfo'] = 'Login page company info';
 $string['companyinfo_desc'] = 'Company info will be shown on Login Page';
 $string['companyinfo_default'] = '<h3 class="mb-5">Support</h3>
